@@ -54,7 +54,7 @@ npm start
 If you have problems connecting remotely to your mobile phone (e.g. wifi firewall block), you will need to install an `expo-cli` package globally
 
 ```
-npm -g expo-cli
+npm install -g expo-cli
 ```
 Then, use this command instead of ```npm start```
 ```
