@@ -23,6 +23,7 @@ const useFetch = (endpoint, query) => {
 
         try {
             const response = await axios.request(options);
+            await new Promise(resolve => setTimeout(resolve, 600));
 
             setData(response.data.data);
             setisLoading(false);
@@ -43,7 +44,7 @@ const useFetch = (endpoint, query) => {
         fetchData();
     }
 
-    return { data, isLoading, error, refetch };
+    return { data, isLoading, error };
 }
 
 export default useFetch;
